@@ -37,13 +37,43 @@
         </ul>
       </div>
       <div class="content-area no-sidebar">
-        <header class="p-2">
-          <ion-icon class="toggle-sidebar" name="trail-sign-outline"></ion-icon>
+        <header class="p-3">
+          <div class="icon firstt d-inline-block">
+            <ion-icon class="toggle-sidebar position-relative text-warning" name="trail-sign-outline"></ion-icon>
+          </div>
+          <div class="notifications-container dropdown d-inline-block ml-3">
+            <div class="icon" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <ion-icon class="text-warning" name="planet-outline"></ion-icon>
+            </div>
+            <div class="dropdown-menu rounded-lg border-0 text-light overflow-hidden" aria-labelledby="notifications">
+              <div class="notify-head p-3 border-bottom border-secondary lead">Notifications<span class="float-right text-danger">50</span></div>
+              <div class="notify-cont p-4">
+                <ul class="m-0 list-unstyled">
+                  <li class="mb-3">
+                    <ion-icon class="mr-3 text-primary" name="person-add"></ion-icon><span class="lead position-relative text-primary">You got friend request from Abdullah M. Ramdan</span>
+                  </li>
+                  <li class="mb-3">
+                    <ion-icon class="mr-3 text-danger" name="heart"></ion-icon><span class="lead position-relative text-danger">You got heart from Mohamed A. Malek</span>
+                  </li>
+                  <li class="mb-3">
+                    <ion-icon class="mr-3 text-success" name="chatbubble"></ion-icon><span class="lead position-relative text-success">You got comment from Ahmed El-Shemy</span>
+                  </li>
+                  <li class="mb-3">
+                    <ion-icon class="mr-3 text-info" name="calendar-clear"></ion-icon><span class="lead position-relative text-info">You have appointment with Abdelrahman</span>
+                  </li>
+                  <li>
+                    <ion-icon class="mr-3 text-secondary" name="mail-unread"></ion-icon><span class="lead position-relative text-secondary">You have unread mail from Larry</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="notify-foot text-center p-3 border-top border-secondary lead"><a href="#">View all notifications</a></div>
+            </div>
+          </div>
         </header>
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">
-              <h2 class="display-4">Homepage</h2>
+              <h2 class="display-1">Homepage</h2>
               <p class="page-description lead text-muted">This is the Homepage Description</p>
             </div>
           </div>
