@@ -1,3 +1,6 @@
+body {
+  font-family: "Comfortaa"; }
+
 .page {
   min-height: 100vh; }
   .page .content-area {
@@ -20,11 +23,14 @@
   left: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #323a46; }
+  background-color: #323a46;
+  overflow-y: auto; }
+  .page .sidebar::-webkit-scrollbar {
+    width: 0; }
   .page .sidebar.no-sidebar {
     left: -250px; }
   .page .sidebar .logo-area {
-    font-size: 26px;
+    font-size: 2rem;
     letter-spacing: 7px; }
   .page .sidebar .links-area li {
     cursor: pointer; }
