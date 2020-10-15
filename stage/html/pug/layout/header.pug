@@ -1,2 +1,25 @@
-header.p-2
-  ion-icon(name="trail-sign-outline", class="toggle-sidebar")
+header.p-3
+  .icon.firstt.d-inline-block: ion-icon(name="trail-sign-outline", class="toggle-sidebar position-relative text-warning")
+  .notifications-container.dropdown.d-inline-block.ml-3
+    .icon(id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"): ion-icon(name="planet-outline" class="text-warning")
+    .dropdown-menu.rounded-lg.border-0.text-light.overflow-hidden(aria-labelledby="notifications")
+      .notify-head.p-3.border-bottom.border-secondary.lead Notifications
+        span.float-right.text-danger 50
+      .notify-cont.p-4
+        ul.m-0.list-unstyled
+          li.mb-3
+            ion-icon(name="person-add" class="mr-3 text-primary")
+            span.lead.position-relative.text-primary You got friend request from Abdullah M. Ramdan
+          li.mb-3
+            ion-icon(name="heart" class="mr-3 text-danger")
+            span.lead.position-relative.text-danger You got heart from Mohamed A. Malek
+          li.mb-3
+            ion-icon(name="chatbubble" class="mr-3 text-success")
+            span.lead.position-relative.text-success You got comment from Ahmed El-Shemy
+          li.mb-3
+            ion-icon(name="calendar-clear" class="mr-3 text-info")
+            span.lead.position-relative.text-info You have appointment with Abdelrahman
+          li
+            ion-icon(name="mail-unread" class="mr-3 text-secondary")
+            span.lead.position-relative.text-secondary You have unread mail from Larry
+      .notify-foot.text-center.p-3.border-top.border-secondary.lead: a(href="#") View all notifications

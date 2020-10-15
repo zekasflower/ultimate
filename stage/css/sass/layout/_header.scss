@@ -2,6 +2,54 @@ header {
   background-color: #242832;
   ion-icon {
     font-size: 26px;
+  }
+  .icon {
+    &.firstt {
+      position: relative;
+      top: -1px;
+    }
+    background-color: #20242e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 5px -4px, -1px -1px 5px -2px #000;
     cursor: pointer;
+    ion-icon {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 26px;
+    }
+  }
+  .notifications-container {
+    .dropdown-menu {
+      min-width: 700px;
+      background-color: #242832;
+      box-shadow: 0 0 30px -22px #000;
+      transform: translate3d(-5px, 50px, 0px) !important;
+      padding: 0 !important;
+      .notify-head {
+        background-color: #323a46;
+      }
+      .notify-cont {
+        ul {
+          li {
+            cursor: pointer;
+            span {
+              top: -5px;
+            }
+          }
+        }
+      }
+      .notify-foot {
+        background-color: #20242e;
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }
