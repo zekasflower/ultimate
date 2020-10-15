@@ -9,5 +9,8 @@ html(lang="en")
   body
     .page.home-page
       include ./pug/layout/sidebar
-      .content-area Content area
-    script(src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js")
+      .content-area
+        include ./pug/layout/header
+        .content
+          h2 #{pageTitle}
+    include ./pug/layout/scripts
