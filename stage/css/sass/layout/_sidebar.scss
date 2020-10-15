@@ -11,5 +11,67 @@
     &.no-sidebar {
       left: -250px;
     }
+    .logo-area {
+      font-size: 26px;
+      letter-spacing: 7px;
+    }
+    .links-area {
+      li {
+        cursor: pointer;
+        ion-icon {
+          top: 1px;
+        }
+        a {
+          transition: 0.3s;
+          &:hover {
+            text-decoration: none;
+            color: #f8f9fa !important;
+          }
+        }
+      }
+      > li > a {
+        &:hover {
+          padding-left: 0.8rem !important;
+        }
+        & + ion-icon {
+          font-size: 18px;
+          top: 17px;
+          transition: 0.3s;
+          &.rotating {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .sub-links {
+        display: none;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 5px;
+          top: 0;
+          width: 2px;
+          height: 100%;
+          background-color: #ffffff80;
+          border-radius: 50%;
+        }
+        a {
+          position: relative;
+          border-radius: 35%;
+          overflow: hidden;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            transition: 0.2s;
+          }
+          &:hover:before {
+            background-color: #f8f9fa;
+          }
+        }
+      }
+    }
   }
 }

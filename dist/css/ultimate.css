@@ -23,6 +23,55 @@
   background-color: #323a46; }
   .page .sidebar.no-sidebar {
     left: -250px; }
+  .page .sidebar .logo-area {
+    font-size: 26px;
+    letter-spacing: 7px; }
+  .page .sidebar .links-area li {
+    cursor: pointer; }
+    .page .sidebar .links-area li ion-icon {
+      top: 1px; }
+    .page .sidebar .links-area li a {
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .page .sidebar .links-area li a:hover {
+        text-decoration: none;
+        color: #f8f9fa !important; }
+  .page .sidebar .links-area > li > a:hover {
+    padding-left: 0.8rem !important; }
+  .page .sidebar .links-area > li > a + ion-icon {
+    font-size: 18px;
+    top: 17px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .page .sidebar .links-area > li > a + ion-icon.rotating {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .page .sidebar .links-area .sub-links {
+    display: none; }
+    .page .sidebar .links-area .sub-links:before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #ffffff80;
+      border-radius: 50%; }
+    .page .sidebar .links-area .sub-links a {
+      position: relative;
+      border-radius: 35%;
+      overflow: hidden; }
+      .page .sidebar .links-area .sub-links a:before {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+      .page .sidebar .links-area .sub-links a:hover:before {
+        background-color: #f8f9fa; }
 
 header {
   background-color: #242832; }
