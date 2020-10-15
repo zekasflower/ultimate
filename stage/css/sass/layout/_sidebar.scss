@@ -8,11 +8,15 @@
     left: 0;
     transition: 0.3s;
     background-color: #323a46;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
     &.no-sidebar {
       left: -250px;
     }
     .logo-area {
-      font-size: 26px;
+      font-size: 2rem;
       letter-spacing: 7px;
     }
     .links-area {
