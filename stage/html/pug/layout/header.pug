@@ -9,7 +9,7 @@ header.p-3
         ul.m-0.list-unstyled
           li.mb-3
             ion-icon(name="person-add" class="mr-3 text-primary")
-            span.lead.position-relative.text-primary You got friend request from Abdullah M. Ramdan
+            span.lead.position-relative.text-primary You got friend request from Abdullah M.
           li.mb-3
             ion-icon(name="heart" class="mr-3 text-danger")
             span.lead.position-relative.text-danger You got heart from Mohamed A. Malek
@@ -24,4 +24,29 @@ header.p-3
             span.lead.position-relative.text-secondary You have unread mail from Larry
       .notify-foot.text-center.p-3.border-top.border-secondary.lead: a(href="#") View all notifications
   .header-icon.d-inline-block.ml-3.toggle-fullscreen: ion-icon(name="expand", class="position-relative text-warning")
-  
+  .usermenu-container.dropdown.d-inline-block.ml-3.float-right
+    .user#usermenu(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+      img.rounded-circle(src="https://scontent.fcai19-3.fna.fbcdn.net/v/t1.0-9/121108636_803973100403327_7449271657883567404_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=ALIg8BpnvtsAX9Li-o1&_nc_ht=scontent.fcai19-3.fna&oh=fc8b1e577370261f625e88c01d68d27b&oe=5FB17DA8" width="40")
+      span.mr-2.ml-2.lead.text-white-50 Abdullah
+      ion-icon(name="chevron-down" class="text-warning")
+    .dropdown-menu.dropdown-menu-right.p-3.rounded-lg.border-dark.text-light.overflow-hidden(aria-labelledby="usermenu")
+      .user-info.text-center.mt-2
+        h5.font-weight-bolder.text-warning Abdullah M. Ramdan
+        p.text-white-50 Ultimate Member
+      hr.border-dark
+      ul.list-unstyled.m-0.user-menu-options
+        li.text-primary.p-2
+          ion-icon(name="analytics-outline")
+          span.lead.ml-3 Analytics
+        li.text-success.p-2
+          ion-icon(name="calendar-outline")
+          span.lead.ml-3 Schedules
+        li.text-info.p-2
+          ion-icon(name="person-outline")
+          span.lead.ml-3 Account Manager
+        li.text-warning.p-2
+          ion-icon(name="flash-outline")
+          span.lead.ml-3 Activity
+        li.text-danger.p-2
+          ion-icon(name="log-out-outline")
+          span.lead.ml-3 Logout
