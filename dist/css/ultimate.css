@@ -1,3 +1,15 @@
+.theme .classname {
+  color: #ffc107; }
+
+.theme .classname {
+  color: #007bff; }
+
+.theme .classname {
+  color: #dc3545; }
+
+.theme .classname {
+  color: #17a2b8; }
+
 body {
   font-family: "Comfortaa"; }
 
@@ -77,7 +89,7 @@ body {
         -webkit-transition: 0.2s;
         transition: 0.2s; }
       .page .sidebar .links-area .sub-links a:hover:before {
-        background-color: #f8f9fa; }
+        background-color: #ffc107; }
 
 header {
   background-color: #242832; }
@@ -130,5 +142,57 @@ header {
     header .usermenu-container .dropdown-menu .user-menu-options ion-icon {
       position: relative;
       top: 7px; }
+
+.settings-box {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 1000;
+  background-color: #323a46;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .settings-box .cog-icon {
+    font-size: 40px;
+    position: absolute;
+    left: -24px;
+    top: 100px;
+    background-color: #323a46;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .settings-box .cog-icon:hover {
+      left: -48px; }
+  .settings-box.show-settings {
+    right: 0; }
+    .settings-box.show-settings .cog-icon {
+      left: -48px; }
+
+.settings-box {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 1000;
+  background-color: #323a46;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .settings-box .cog-icon {
+    font-size: 40px;
+    position: absolute;
+    left: -24px;
+    top: 100px;
+    background-color: #323a46;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .settings-box .cog-icon:hover {
+      left: -48px; }
+  .settings-box.show-settings {
+    right: 0; }
+    .settings-box.show-settings .cog-icon {
+      left: -48px; }
 
 /*# sourceMappingURL=ultimate.css.map */

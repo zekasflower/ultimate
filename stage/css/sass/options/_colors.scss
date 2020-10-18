@@ -1,0 +1,21 @@
+$themes: (
+  warning-theme: (
+    baloot: #ffc107,
+  ),
+  primary-theme: (
+    baloot: #007bff,
+  ),
+  danger-theme: (
+    baloot: #dc3545,
+  ),
+  info-theme: (
+    baloot: #17a2b8,
+  ),
+);
+@each $theme, $map in $themes {
+  .#{theme} {
+    .classname {
+      color: map-get($map, baloot);
+    }
+  }
+}
