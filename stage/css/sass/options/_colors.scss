@@ -13,8 +13,8 @@ $themes: (
   ),
 );
 @each $theme, $map in $themes {
-  .#{theme} {
-    .classname {
+  .#{$theme} {
+    .page .settings-box .colors-box h5 {
       color: map-get($map, baloot);
     }
   }

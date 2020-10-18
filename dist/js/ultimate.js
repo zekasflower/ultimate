@@ -20,6 +20,17 @@ $(function () {
   $(".toggle-settings").on("click", function () {
     $(this).parent(".settings-box").toggleClass("show-settings");
   });
+  var themeClasses = [];
+  $(".colors-box li").each(function () {
+    themeClasses.push($(this).data("theme"));
+  });
+  $(".colors-box li:first-of-type").addClass("active");
+  $(".colors-box li").on("click", function () {
+    $(this).addClass("active").siblings("li").removeClass("active");
+    $("body")
+      .removeClass(themeClasses.join(" "))
+      .addClass($(this).data("theme"));
+  });
 });
 
 var elem = document.documentElement;

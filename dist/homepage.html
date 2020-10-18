@@ -10,20 +10,19 @@
   </head>
   <body>
     <div class="page home-page text-light">
-      <div class="settings-box p-3">
+      <div class="settings-box p-3 show-settings">
         <ion-icon class="cog-icon toggle-settings d-inline-block p-1 text-warning" name="cog-outline"></ion-icon>
-        <h4 class="text-center text-warning mb-4">Theme options</h4>
-        <div class="option-box">
-          <h5 class="text-center text-light">Colors option</h5>
-        </div>
-        <div class="option-box">
-          <h5 class="text-center text-success">Colors option</h5>
-        </div>
-        <div class="option-box">
-          <h5 class="text-center text-info">Colors option</h5>
-        </div>
-        <div class="option-box">
-          <h5 class="text-center text-danger">Colors option</h5>
+        <div class="settings-content text-center">
+          <h4 class="text-warning mb-4 font-weight-bolder">Theme options</h4>
+          <div class="option-box colors-box">
+            <h5 class="text-center">Colors option</h5>
+            <ul class="list-unstyled">
+              <li data-theme="warning-theme"></li>
+              <li data-theme="primary-theme"></li>
+              <li data-theme="danger-theme"></li>
+              <li data-theme="info-theme"></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="sidebar no-sidebar">
