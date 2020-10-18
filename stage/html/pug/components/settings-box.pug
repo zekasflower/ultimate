@@ -1,11 +1,10 @@
-.settings-box.p-3
+.settings-box.p-3.show-settings
   ion-icon.cog-icon.toggle-settings.d-inline-block.p-1.text-warning(name="cog-outline")
-  h4.text-center.text-warning.mb-4 Theme options
-  .option-box
-    h5.text-center.text-light Colors option
-  .option-box
-    h5.text-center.text-success Colors option
-  .option-box
-    h5.text-center.text-info Colors option
-  .option-box
-    h5.text-center.text-danger Colors option
+  .settings-content.text-center
+    h4.text-warning.mb-4.font-weight-bolder Theme options
+    .option-box.colors-box
+      h5.text-center Colors option
+      - var themes = ["warning-theme", "primary-theme", "danger-theme", "info-theme"]
+      ul.list-unstyled
+        each theme in themes
+          li(data-theme=theme)
