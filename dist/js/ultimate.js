@@ -17,6 +17,9 @@ $(function () {
       $(this).find("ion-icon").attr("name", "expand");
     }
   });
+  $(".toggle-settings").on("click", function () {
+    $(this).parent(".settings-box").toggleClass("show-settings");
+  });
 });
 
 var elem = document.documentElement;
