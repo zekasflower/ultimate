@@ -3,7 +3,7 @@
   ul.links-area.list-unstyled
     li
       ion-icon(name="pulse-outline" class="position-relative text-warning")
-      a(href="#" class="text-light p-2 d-inline-block lead") Homepage
+      a(href="homepage.html" class="text-light p-2 d-inline-block lead" class= pageTitle === "Homepage" ? "active" : "") Homepage
     li.has-sub.overflow-hidden
       ion-icon(name="pulse-outline" class="position-relative text-warning")
       a(href="#" class="text-light p-2 d-inline-block lead") Forms
@@ -20,3 +20,6 @@
       ul.sub-links.list-unstyled.position-relative
         li: a(href="#" class="text-white-50 p-2 pl-4 d-block") Loading
         li: a(href="#" class="text-white-50 p-2 pl-4 d-block") Sliding
+    li
+      ion-icon(name="pulse-outline" class="position-relative text-warning")
+      a(href="analytics.html" class="text-light p-2 d-inline-block lead" class= pageTitle === "Analytics" ? "active" : "") Analytics
