@@ -1,14 +1,26 @@
-.warning-theme .page .settings-box .colors-box h5 {
-  color: #ffc107; }
+.warning-theme .page .sidebar .links-area li a:hover:before {
+  background-color: #ffc107 !important; }
 
-.primary-theme .page .settings-box .colors-box h5 {
-  color: #007bff; }
+.warning-theme header .header-icon ion-icon {
+  color: #ffc107 !important; }
 
-.danger-theme .page .settings-box .colors-box h5 {
-  color: #dc3545; }
+.primary-theme .page .sidebar .links-area li a:hover:before {
+  background-color: #007bff !important; }
 
-.info-theme .page .settings-box .colors-box h5 {
-  color: #17a2b8; }
+.primary-theme header .header-icon ion-icon {
+  color: #007bff !important; }
+
+.danger-theme .page .sidebar .links-area li a:hover:before {
+  background-color: #dc3545 !important; }
+
+.danger-theme header .header-icon ion-icon {
+  color: #dc3545 !important; }
+
+.info-theme .page .sidebar .links-area li a:hover:before {
+  background-color: #17a2b8 !important; }
+
+.info-theme header .header-icon ion-icon {
+  color: #17a2b8 !important; }
 
 body {
   font-family: "Comfortaa"; }
@@ -168,8 +180,6 @@ header {
     right: 0; }
     .settings-box.show-settings .cog-icon {
       left: -48px; }
-  .settings-box .colors-box h5 {
-    color: #ffc107; }
   .settings-box .colors-box ul li:nth-child(1) {
     background-color: #ffc107; }
   .settings-box .colors-box ul li:nth-child(2) {
