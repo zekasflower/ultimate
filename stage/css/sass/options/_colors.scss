@@ -14,8 +14,12 @@ $themes: (
 );
 @each $theme, $map in $themes {
   .#{$theme} {
-    .page .settings-box .colors-box h5 {
-      color: map-get($map, baloot);
+    $this: map-get($map, baloot) !important;
+    .page .sidebar .links-area li a:hover:before {
+      background-color: $this;
+    }
+    header .header-icon ion-icon {
+      color: $this;
     }
   }
 }
